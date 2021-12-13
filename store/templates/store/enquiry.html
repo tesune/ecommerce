@@ -1,0 +1,68 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+
+  <div class="col-md-10">
+    <strong><h1 class="display-1 text-primary">Welcome to Enquiry Page</h></strong>
+  </div>
+ 
+  <br><br>
+      <!-- <br><br><br>
+      <center>
+        <h2>Thank for contacting {{ subject }}!</h2>
+        <p>We received your email and will back to you shortly !</p>
+      </center>
+      <br><br><br> -->
+  <!-- Contact Form -->
+
+      <!-- Form -->
+      <form action="{% url 'enquiry' %}" method="post" class="">
+        {% csrf_token %}
+        <div class="col-12 col-md-12 ">
+          <div>
+            <!-- Section Heading -->
+        <div class="box-element2">
+            <div class="section-heading">
+              <h2>I'm Here To Help !</h2>
+            <div class="line"></div>    
+        <div class="row">
+          <div class="col-md-4">
+            <input type="text" name="subject" class="form-control mb-30" placeholder="Your Name">
+          </div>
+          <div class="col-md-4">
+            <input type="email" name="from_email" class="form-control mb-30" placeholder="Your Email">
+          </div>
+          <div class="col-md-8">
+            <textarea name="message" class="form-control mb-30" placeholder="Your Message"></textarea>
+          </div>
+        </div>
+      </div>
+          <div class="input-group mb-3">
+            <div class="col-md-4">
+              <div class="g-recaptcha" data-sitekey="6LeRR5QdAAAAAIEFWtZ8D8AFw9IoCJU1jb9hdOUJ"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <button type="submit" class="btn btn-primary" id="curvBtn" >Send Message</button>
+          </div>
+        </div>
+          <br><br>
+          <div class="col-md-4 box-element2">
+          <div class="container">
+              <h4>Email Address</h4>
+              <strong><a href="mailto:BooknpageSupport@gmail.com?subject=Mail from Our Site">Click Here to Send us an Email</a></strong></large>  
+              <br><br>
+              <h4>Contact Number</h4>
+              <p>+60-123456789</p>
+              <h4>Our Address Location</h4>
+              <p>168, Jln Bukit Bintang,<br>
+                56100 Kuala Lumpur,<br>
+                Wilayah Persekutuan Kuala Lumpur        
+              </p>
+          </div>
+          </div>
+          </div>
+        </div>
+      </form>
+
+{% endblock content %}

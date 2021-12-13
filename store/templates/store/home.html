@@ -1,0 +1,17 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+<div class="overlay"></div>
+<div class="text-black box-element2">
+    <div class="container py-3 text-center">
+        <h1 class="display-3 text-secondary">Welcome to Book N'Pages</h1>
+        <p class="font-italic mb-0">You are coming to a right place to get what you need</p>
+        <p class="font-italic">          
+            <u>Book N'Pages Team</u>
+        </p>
+        <a href="{% url 'store' %}" class="btn btn-primary px-6">Check Out Our Store</a>
+    </div>
+</div>
+    <h2></h2>
+    
+{% endblock content %}

@@ -1,0 +1,145 @@
+body{	
+	min-height: 100vh;
+	display: flex;
+    flex-direction: column;
+}
+
+.img{
+	background-image: url('/static/images/wallpaper1.jpg');
+	background-size: cover;
+	position: relative;
+}
+
+h1,h2,h3,h4,h5,h6{
+	color:hsl(0, 0%, 30%);
+	position: relative;
+}
+
+background-image{
+	background-color: rgba(240, 212,175, 0.5);
+}
+.sticky-footer {
+	position: sticky;
+	background-color: rgba(255, 240, 212, 0.75);
+	top: 100%;
+}
+
+.box-element{
+	box-shadow:hsl(0, 0%, 70%) 0 0 15px;
+	background-color: #fffaf1;
+	border-radius: 4px;
+	padding: 18px;
+}
+
+.box-element2{
+	box-shadow:rgb(179, 179, 179) 0 0 15px;
+	background-color: rgb(255, 251, 245, 0.75);
+	border-radius: 50px;
+	padding: 20px;
+	
+}
+
+.thumbnail{
+	width: 100%; 
+	height:350px;
+	-webkit-box-shadow: -1px -3px 5px -2px rgba(214,214,214,1);
+    -moz-box-shadow: -1px -3px 5px -2px rgba(214,214,214,1);
+    box-shadow: -1px -3px 5px -2px rgba(214,214,214,1);
+}
+
+.product{
+	border-radius: 0 0 4px 4px;
+}
+
+.bg-dark{
+	color: black;
+	background-color: rgb(255, 240, 212,0.75)!important;
+	
+}
+
+#cart-icon{
+	width:30px;
+	display: inline-block;
+	margin-left: 25px;
+}
+
+#cart-total{
+	display: block;
+	text-align: center;
+	color:#fff;
+	background-color: rgb(74, 153, 255);
+	width: 25px;
+	height: 23px;
+	border-radius: 50%;
+	font-size: 13px;
+	font-weight: bold;	
+}
+
+#curvBtn{
+	font-size: 15px;
+	border-radius: 50px;
+}
+
+.col-md-4, .col-md-6, .col-md-8, .col-md-12{
+	margin-top: 15px;
+}
+
+.btn{
+	border-radius: 0;
+}
+
+.row-image{
+	width: 150px;
+	border: 5px solid rgb(255, 227, 168);
+	border-radius: 15px;
+	padding: 1px;
+}
+
+.form-field{
+	width:250px;
+	display: inline-block;
+	padding: 5px;
+}
+
+.cart-row{
+	display: flex;
+    align-items: flex-stretch;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ffffff;
+
+}
+
+.quantity{
+	display: inline-block;
+	font-weight: 700;
+	padding-right:10px;
+	
+
+}
+
+.chg-quantity{
+	width: 12px;
+	cursor: pointer;
+	display: block;
+	margin-top: 5px;
+	transition:.1s;
+}
+
+.chg-quantity:hover{
+	opacity: .6;
+}
+
+
+.hidden{
+	display: none!important;
+}
+
+li {
+	list-style-type: none;
+}
+
+.picsize {
+	width: 90%;
+	height: 500px;
+}
